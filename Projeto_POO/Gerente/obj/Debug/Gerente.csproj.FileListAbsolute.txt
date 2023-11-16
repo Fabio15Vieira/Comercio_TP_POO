@@ -1,0 +1,9 @@
+C:\Users\Fábio\Desktop\Projeto_POO\Gerente\bin\Debug\Gerente.dll
+C:\Users\Fábio\Desktop\Projeto_POO\Gerente\bin\Debug\Gerente.pdb
+C:\Users\Fábio\Desktop\Projeto_POO\Gerente\bin\Debug\Pessoas.dll
+C:\Users\Fábio\Desktop\Projeto_POO\Gerente\bin\Debug\Pessoas.pdb
+C:\Users\Fábio\Desktop\Projeto_POO\Gerente\obj\Debug\Gerente.csproj.AssemblyReference.cache
+C:\Users\Fábio\Desktop\Projeto_POO\Gerente\obj\Debug\Gerente.csproj.CoreCompileInputs.cache
+C:\Users\Fábio\Desktop\Projeto_POO\Gerente\obj\Debug\Gerente.csproj.CopyComplete
+C:\Users\Fábio\Desktop\Projeto_POO\Gerente\obj\Debug\Gerente.dll
+C:\Users\Fábio\Desktop\Projeto_POO\Gerente\obj\Debug\Gerente.pdb

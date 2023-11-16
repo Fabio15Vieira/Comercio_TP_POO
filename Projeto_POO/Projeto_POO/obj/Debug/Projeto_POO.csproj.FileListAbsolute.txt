@@ -1,0 +1,11 @@
+C:\Users\Fábio\Desktop\Projeto_POO\Projeto_POO\bin\Debug\Projeto_POO.exe.config
+C:\Users\Fábio\Desktop\Projeto_POO\Projeto_POO\bin\Debug\Projeto_POO.exe
+C:\Users\Fábio\Desktop\Projeto_POO\Projeto_POO\bin\Debug\Projeto_POO.pdb
+C:\Users\Fábio\Desktop\Projeto_POO\Projeto_POO\obj\Debug\Projeto_POO.csproj.AssemblyReference.cache
+C:\Users\Fábio\Desktop\Projeto_POO\Projeto_POO\obj\Debug\Projeto_POO.csproj.SuggestedBindingRedirects.cache
+C:\Users\Fábio\Desktop\Projeto_POO\Projeto_POO\obj\Debug\Projeto_POO.csproj.CoreCompileInputs.cache
+C:\Users\Fábio\Desktop\Projeto_POO\Projeto_POO\obj\Debug\Projeto_POO.exe
+C:\Users\Fábio\Desktop\Projeto_POO\Projeto_POO\obj\Debug\Projeto_POO.pdb
+C:\Users\Fábio\Desktop\Projeto_POO\Projeto_POO\bin\Debug\Produtos.dll
+C:\Users\Fábio\Desktop\Projeto_POO\Projeto_POO\bin\Debug\Produtos.pdb
+C:\Users\Fábio\Desktop\Projeto_POO\Projeto_POO\obj\Debug\Projeto_POO.csproj.CopyComplete

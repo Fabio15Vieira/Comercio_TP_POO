@@ -1,0 +1,6 @@
+C:\Users\Fábio\Desktop\Projeto_POO\Produtos\obj\Debug\Produtos.csproj.AssemblyReference.cache
+C:\Users\Fábio\Desktop\Projeto_POO\Produtos\obj\Debug\Produtos.csproj.CoreCompileInputs.cache
+C:\Users\Fábio\Desktop\Projeto_POO\Produtos\bin\Debug\Produtos.dll
+C:\Users\Fábio\Desktop\Projeto_POO\Produtos\bin\Debug\Produtos.pdb
+C:\Users\Fábio\Desktop\Projeto_POO\Produtos\obj\Debug\Produtos.dll
+C:\Users\Fábio\Desktop\Projeto_POO\Produtos\obj\Debug\Produtos.pdb

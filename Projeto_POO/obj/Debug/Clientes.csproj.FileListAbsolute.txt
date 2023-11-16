@@ -1,0 +1,2 @@
+C:\Users\Fábio\Desktop\Projeto_POO\obj\Debug\Clientes.csproj.AssemblyReference.cache
+C:\Users\Fábio\Desktop\Projeto_POO\obj\Debug\Clientes.csproj.CoreCompileInputs.cache
