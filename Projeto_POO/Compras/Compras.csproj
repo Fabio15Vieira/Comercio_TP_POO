@@ -34,8 +34,15 @@
     <Reference Include="Clientes">
       <HintPath>..\Clientes\bin\Debug\Clientes.dll</HintPath>
     </Reference>
+    <Reference Include="Pessoas, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Pessoas\bin\Debug\Pessoas.dll</HintPath>
+    </Reference>
     <Reference Include="Produtos">
       <HintPath>..\Produtos\bin\Debug\Produtos.dll</HintPath>
+    </Reference>
+    <Reference Include="Recibos">
+      <HintPath>..\Recibos\bin\Debug\Recibos.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -48,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Compra.cs" />
+    <Compile Include="GerirCompras.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

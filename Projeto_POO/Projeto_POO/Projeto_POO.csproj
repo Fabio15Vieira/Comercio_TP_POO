@@ -33,8 +33,23 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Clientes">
+      <HintPath>..\Clientes\bin\Debug\Clientes.dll</HintPath>
+    </Reference>
+    <Reference Include="Compras">
+      <HintPath>..\Compras\bin\Debug\Compras.dll</HintPath>
+    </Reference>
+    <Reference Include="Funcionarios">
+      <HintPath>..\Funcionarios\bin\Debug\Funcionarios.dll</HintPath>
+    </Reference>
+    <Reference Include="Garantias">
+      <HintPath>..\Garantias\bin\Debug\Garantias.dll</HintPath>
+    </Reference>
     <Reference Include="Pessoas">
       <HintPath>..\Pessoas\bin\Debug\Pessoas.dll</HintPath>
+    </Reference>
+    <Reference Include="Recibos">
+      <HintPath>..\Recibos\bin\Debug\Recibos.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,6 +61,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class1.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

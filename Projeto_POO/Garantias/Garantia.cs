@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using Compras;
-using Recibos;
+using Faturas;
 using Produtos;
+using Clientes;
 
 
 /*
@@ -27,15 +29,20 @@ namespace Garantias
     /// </summary>
     /// <remarks></remarks>
     /// <example></example>
-    public class Garantia : Recibo
+    public class Garantia
     {
 
         #region Attributes
 
-        static int idGarantia = 0;
+        int idGarantia;
+        int idProduto;
+        int idCompra;
+        int idCliente;
+        bool garantiaUsada;
+        bool fimGarantia;
         DateTime dataPag;
-        int grarantiaProd;
-        DateTime dataFinal;
+        int garantiaProd;
+        DateTime dataFim;
 
         #endregion
 
@@ -46,6 +53,19 @@ namespace Garantias
         /// <summary>
         /// The default Constructor.
         /// </summary>
+        /// 
+        public Garantia(Compra compra, Produto produto,int id)
+        {
+            this.idGarantia = id;
+            this.idCompra = compra.IdCompra;
+            this.idProduto = produto.IdProduto;
+            this.idCliente = compra.Cliente.IdCliente;
+            this.dataPag = compra.DataPagamento;
+            this.garantiaProd = produto.ValorGarantia;
+            this.garantiaUsada = false;
+            this.fimGarantia = false;
+            this.dataFim = dataPag.AddYears(garantiaProd);
+        }
 
         #endregion
 
@@ -54,9 +74,45 @@ namespace Garantias
         /// <summary>
         /// 
         /// </summary>
-        
+        /// 
+        public int IdGarantia
+        {
+            get { return idGarantia; }
+            set { idGarantia = value; }
+        }
+
+        public int IdCompra
+        {
+            get { return idCompra; }
+            set { idCompra = value; }
+        }
+
+        public int IdProduto
+        {
+            get { return idProduto; }
+            set { idProduto= value; }
+        }
+
+        public bool GarantiaUsada
+        {
+            get { return garantiaUsada; }
+            set { garantiaUsada = value; }
+        }
+
+        public bool FimGarantia
+        {
+            get { return fimGarantia; }
+            set { fimGarantia = value; }
+        }
+
+        public DateTime DataFim
+        {
+            get { return dataFim; }
+            set { dataFim = value; }
+        }
+
         #endregion
-        
+
         #region Operators
 
         /// <summary>
@@ -67,6 +123,16 @@ namespace Garantias
 
         #region Overrides
 
+        public override string ToString()
+        {
+            if(garantiaUsada)
+                return String.Format($"Id Garatia:{idGarantia} -- Id Compra: {idCompra} -- Id Produto:{idProduto} -- Fim da garantia: {dataFim.ToString("dd/MM/yyyy")} -- Garantia ja foi usada");
+            else if(!garantiaUsada && !fimGarantia)
+                return String.Format($"Id Garatia:{idGarantia} -- Id Compra: {idCompra} -- Id Produto:{idProduto} -- Fim da garantia: {dataFim.ToString("dd/MM/yyyy")} -- Garantia disponivel");
+            else
+                return String.Format($"Id Garatia:{idGarantia} -- Id Compra: {idCompra} -- Id Produto:{idProduto} -- Fim da garantia: {dataFim.ToString("dd/MM/yyyy")} -- Garantia fora de validade");
+        }
+
         #endregion
 
         #region OtherMethods
@@ -74,6 +140,7 @@ namespace Garantias
         /// <summary>
         /// 
         /// </summary>
+        /// 
 
         #endregion
 
@@ -84,7 +151,7 @@ namespace Garantias
         /// </summary>
 
         #endregion
-        
+
         #endregion
 
     }

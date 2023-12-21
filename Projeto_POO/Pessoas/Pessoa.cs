@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Interfaces;
 
 /*
 *	<copyright file="Pessoa.cs" company="IPCA">
@@ -24,13 +25,14 @@ namespace Pessoas
     /// </summary>
     /// <remarks></remarks>
     /// <example></example>
-    public class Pessoa
+    public class Pessoa : IPessoa
     {
 
         #region Attributes
         
         string nome;
         DateTime dataNasc;
+        int idade;
         string contacto;
         string endereço;
         
@@ -51,7 +53,35 @@ namespace Pessoas
         /// <summary>
         /// 
         /// </summary>
+        /// 
+        public string Nome
+        {
+            get { return nome; }
+            set { nome = value; }
+        }
 
+        public string Contacto
+        {
+            get { return contacto; }
+            set { contacto = value; }
+        }
+        public DateTime DataNasc
+        {
+            get { return dataNasc; }
+            set { dataNasc = value; }
+        }
+
+        public int Idade {
+            get { return idade; }
+            set { idade = value; }
+        }
+
+
+        public string Endereço
+        {
+            get { return endereço; }
+            set { endereço = value; }
+        }
         #endregion
 
         #region Operators

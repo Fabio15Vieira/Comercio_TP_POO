@@ -30,13 +30,15 @@ namespace Produtos
 
         #region Attributes
 
-        static int idProduto = 0;
+        //static int id = 0;
+        int idProduto;
         string nome;
-        int preço;
+        Dictionary<int, int> preço;
+        Dictionary<int, int> totalVendas;
+        int preçoAtual;
+        int preçoPago;
         int valorGarantia;
         int quantidade;
-        int totalVendas;
-
         Categoria c;
         Marca m;
 
@@ -50,15 +52,23 @@ namespace Produtos
         /// The default Constructor.
         /// </summary>
         
-        public Produto()
+        public Produto(string nome, int garantia,int quantidade,int p, Marca m, Categoria c)
         {
-
+            this.nome = nome;
+            this.valorGarantia = garantia;
+            this.quantidade = quantidade;
+            preço = new Dictionary<int, int>();
+            totalVendas = new Dictionary<int, int>();
+            this.m = m;
+            this.c= c;
+            int key = int.Parse($"{DateTime.Now.Month}{DateTime.Now.Year}");
+            preço.Add(key, p);
+            totalVendas.Add(key, 0);
+            key = preço.Keys.Max();
+            preçoAtual = preço[key];
         }
 
-        /*public Produto(int idProduto;) 
-        {
-            get
-        }*/
+
 
         #endregion
 
@@ -67,18 +77,78 @@ namespace Produtos
         /// <summary>
         /// 
         /// </summary>
+        /// 
+        public int IdProduto { 
+            get { return idProduto; } 
+            set { idProduto = value; } 
+        }
+        public string Nome { 
+            get { return nome; } 
+            set { nome = value; }
+        }
+        public int ValorGarantia
+        {
+            get { return valorGarantia; }
+            set { valorGarantia = value; }
+        }
 
+        public int Quantidade
+        {
+            get { return quantidade; }
+            set { quantidade = value; }
+        }
+
+        public int PreçoAtual
+        {
+            get { return preçoAtual; }
+            set { preçoAtual = value; }
+        }
+
+        public int PreçoPago
+        {
+            get { return preçoPago; }
+            set { preçoPago = value; }
+        }
+        public Dictionary<int,int> Preço
+        {
+            get { return preço; }
+            set { preço = value; }
+        }
+        public Dictionary<int, int> TotalVendas
+        {
+            get { return totalVendas; }
+            set { totalVendas = value; }
+        }
+        public Marca M
+        {
+            get { return m; }
+            set { m = value; }
+        }
+        public Categoria C
+        {
+            get { return c; }
+            set { c = value; }
+        }
         #endregion
+
 
         #region Operators
 
         /// <summary>
         /// 
         /// </summary>
+        /// 
+
 
         #endregion
 
         #region Overrides
+
+        public override string ToString()
+        {
+            return String.Format($"Id:{idProduto} -- Nome:{nome} -- Preço:{preçoAtual} -- Quantidade:{quantidade} -- Marca:{m.Nome} Categoria:{c.Nome}");
+        }
+
 
         #endregion
 
@@ -87,6 +157,7 @@ namespace Produtos
         /// <summary>
         /// 
         /// </summary>
+        /// 
 
         #endregion
 

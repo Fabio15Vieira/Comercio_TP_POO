@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Produtos;
 using Clientes;
-
+using Pessoas;
 
 /*
 *	<copyright file="Compra.cs" company="IPCA">
@@ -30,13 +30,14 @@ namespace Compras
     {
         
         #region Attributes
-
-        static int idCompra = 0;
+        static int id = 0;  
+        int idCompra;
         int total;
-        string metodoPag;
-
+        int pago;
+        string estado;
         Cliente cliente;
-        Produto[] listaProdutos;
+        List<Produto> listaProdutos;
+        DateTime dataPagamento;
 
         #endregion
 
@@ -47,6 +48,15 @@ namespace Compras
         /// <summary>
         /// The default Constructor.
         /// </summary>
+        /// 
+        public Compra(Cliente cliente)
+        {
+            idCompra=id;
+            this.cliente = cliente;
+            estado="Aberto";
+            listaProdutos = new List<Produto>();
+            id++;
+        }
 
         #endregion
 
@@ -56,17 +66,70 @@ namespace Compras
         /// 
         /// </summary>
         
+        public int IdCompra
+        {
+            get { return idCompra; }
+            set { idCompra = value; }
+        }
+
+        public List<Produto> ListaProdutos
+        {
+            get { return listaProdutos; }
+            set { listaProdutos = value; }
+        }
+
+        public int Total
+        {
+            get { return total; }
+            set { total = value; }
+        }
+
+        public int Pago
+        {
+            get { return pago; }
+            set { pago = value; }
+        }
+
+        public string Estado
+        {
+            get { return estado; }
+            set { estado = value; }
+        }
+
+        public Cliente Cliente
+        {
+            get { return cliente; }
+            set { cliente = value; }
+        }
+
+        public DateTime DataPagamento
+        {
+            get { return dataPagamento; }
+            set { dataPagamento = value; }
+        }
         #endregion
-        
+
         #region Operators
 
         /// <summary>
         /// 
         /// </summary>
 
+
+
+
+
         #endregion
 
         #region Overrides
+
+        public override string ToString()
+        {
+            if (estado == "Concluido")
+                return String.Format($"Id:{idCompra} -- Nome do cliente: {cliente.Nome} -- Total:{total} -- Estado: {estado} -- Data Pagamento: {dataPagamento.ToString("dd/MM/yyyy")}");
+            return String.Format($"Id:{idCompra} -- Nome do cliente: {cliente.Nome} -- Total:{total} -- Estado: {estado}");
+        }
+
 
         #endregion
 
@@ -75,6 +138,19 @@ namespace Compras
         /// <summary>
         /// 
         /// </summary>
+        /// 
+        public string ToStringCompraProdutos(Produto produto)
+        {
+            if (produto != null)
+            {
+                int key = int.Parse($"{dataPagamento.Month}{dataPagamento.Year}");
+                if (estado == "Concluido")
+                    return String.Format($"IdProduto:{produto.IdProduto} -- Nome:{produto.Nome} -- Preço Pago:{produto.PreçoPago} -- Marca:{produto.M.Nome} Categoria:{produto.C.Nome}");
+                else if (estado == "Aberto")
+                    return String.Format($"IdProduto:{produto.IdProduto} -- Nome:{produto.Nome} -- Preço:{produto.PreçoAtual} -- Marca:{produto.M.Nome} Categoria:{produto.C.Nome}");
+            }
+            return null;
+        }
 
         #endregion
 
@@ -85,7 +161,7 @@ namespace Compras
         /// </summary>
 
         #endregion
-        
+
         #endregion
 
     }

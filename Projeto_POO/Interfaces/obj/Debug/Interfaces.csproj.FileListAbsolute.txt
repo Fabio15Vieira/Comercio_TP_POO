@@ -1,0 +1,6 @@
+C:\Users\Fábio\Desktop\Projeto_POO\Interfaces\bin\Debug\Interfaces.dll
+C:\Users\Fábio\Desktop\Projeto_POO\Interfaces\bin\Debug\Interfaces.pdb
+C:\Users\Fábio\Desktop\Projeto_POO\Interfaces\obj\Debug\Interfaces.csproj.AssemblyReference.cache
+C:\Users\Fábio\Desktop\Projeto_POO\Interfaces\obj\Debug\Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\Fábio\Desktop\Projeto_POO\Interfaces\obj\Debug\Interfaces.dll
+C:\Users\Fábio\Desktop\Projeto_POO\Interfaces\obj\Debug\Interfaces.pdb

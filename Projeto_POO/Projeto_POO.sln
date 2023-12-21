@@ -17,9 +17,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clientes", "Clientes\Client
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Compras", "Compras\Compras.csproj", "{1723AA5B-FF86-439E-83CD-AE3A01F46F15}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recibos", "Recibos\Recibos.csproj", "{59217C31-A8E7-469C-B7FA-2264948ED5BD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Faturas", "Recibos\Faturas.csproj", "{59217C31-A8E7-469C-B7FA-2264948ED5BD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Garantias", "Garantias\Garantias.csproj", "{29AC3DB9-617E-4ADE-8943-5E526D99E9F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{1E025CD7-545F-4925-9022-DE559E51DE5D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{29AC3DB9-617E-4ADE-8943-5E526D99E9F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29AC3DB9-617E-4ADE-8943-5E526D99E9F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29AC3DB9-617E-4ADE-8943-5E526D99E9F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E025CD7-545F-4925-9022-DE559E51DE5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E025CD7-545F-4925-9022-DE559E51DE5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E025CD7-545F-4925-9022-DE559E51DE5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E025CD7-545F-4925-9022-DE559E51DE5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

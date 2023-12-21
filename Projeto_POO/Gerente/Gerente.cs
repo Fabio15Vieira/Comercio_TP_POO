@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -30,9 +31,6 @@ namespace Gerente
         
         #region Attributes
 
-        int idGerente;
-        DateTime dataAdmissao;
-
         #endregion
 
         #region Methods
@@ -42,6 +40,20 @@ namespace Gerente
         /// <summary>
         /// The default Constructor.
         /// </summary>
+        /// 
+        public Gerente(string nome, string contacto, string endereço, DateTime dataNasc) 
+        {
+            this.Nome = nome;
+            this.Contacto = contacto;
+            this.Endereço = endereço;
+            this.DataNasc = dataNasc;
+            this.Idade = DateTime.Now.Year - dataNasc.Year;
+            if (dataNasc.Date > DateTime.Now.AddYears(-Idade))
+            {
+                Idade--;
+            }
+        }
+    }
 
         #endregion
 
@@ -84,4 +96,4 @@ namespace Gerente
         #endregion
 
     }
-}
+

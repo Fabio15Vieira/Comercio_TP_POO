@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using Pessoas;
 
-
 /*
 *	<copyright file="Cliente.cs" company="IPCA">
 *		Copyright (c) 2023 All Rights Reserved
@@ -30,7 +29,7 @@ namespace Clientes
 
         #region Attributes
 
-        static int idCliente = 0;
+        int idCliente = 0;
         int nif;
 
         #endregion
@@ -42,6 +41,19 @@ namespace Clientes
         /// <summary>
         /// The default Constructor.
         /// </summary>
+        public Cliente(string nome, int nif, string contacto, string endereço, DateTime dataNasc )
+        {
+            this.Nome = nome;
+            this.nif = nif;
+            this.Contacto= contacto;
+            this.Endereço= endereço;
+            this.DataNasc = dataNasc;
+            this.Idade = DateTime.Now.Year - dataNasc.Year;
+            if (dataNasc.Date > DateTime.Now.AddYears(-Idade))
+            {
+                Idade--;
+            }
+        }
 
         #endregion
 
@@ -50,19 +62,42 @@ namespace Clientes
         /// <summary>
         /// 
         /// </summary>
-        
+
+        public int Nif { get { return nif; } set { nif = value; } }
+
+        public int IdCliente
+        {
+            get { return idCliente; }
+            set { idCliente = value; }
+        }
         #endregion
-        
+
         #region Operators
 
         /// <summary>
         /// 
         /// </summary>
+        /// 
+        public static bool operator ==(Cliente c1, Cliente c2)
+        {
+            if ((c1.nif == c2.nif))
+                return true;
+            return false;
+        }
+        public static bool operator !=(Cliente c1, Cliente c2)
+        {
+            if (c1 == c2)
+                return false;
+            return true;
+        }
 
         #endregion
 
         #region Overrides
-
+        public override string ToString()
+        {
+            return String.Format($"Id:{idCliente} -- Nome: {Nome}");
+        }
         #endregion
 
         #region OtherMethods
@@ -80,7 +115,7 @@ namespace Clientes
         /// </summary>
 
         #endregion
-        
+
         #endregion
 
     }

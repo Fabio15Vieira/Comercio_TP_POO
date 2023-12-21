@@ -24,7 +24,7 @@ namespace Produtos
     /// </summary>
     /// <remarks></remarks>
     /// <example></example>
-    internal class Categoria
+    public class Categoria
     {
 
         #region Attributes
@@ -41,6 +41,11 @@ namespace Produtos
         /// <summary>
         /// The default Constructor.
         /// </summary>
+        /// 
+        public Categoria(string nome)
+        {
+            this.nome = nome;
+        }
 
         #endregion
 
@@ -49,6 +54,16 @@ namespace Produtos
         /// <summary>
         /// 
         /// </summary>
+        /// 
+        public int IdCategoria { 
+            get { return idCategoria; } 
+            set { idCategoria = value; } 
+        }
+        public string Nome
+        {
+            get { return nome; }
+            set { nome = value; }
+        }
 
         #endregion
 
@@ -57,10 +72,27 @@ namespace Produtos
         /// <summary>
         /// 
         /// </summary>
+        /// 
+        public static bool operator ==(Categoria c1, Categoria c2)
+        {
+            if ((c1.nome == c2.nome))
+                return true;
+            return false;
+        }
+        public static bool operator !=(Categoria c1, Categoria c2)
+        {
+            if (c1 == c2)
+                return false;
+            return true;
+        }
 
         #endregion
 
         #region Overrides
+        public override string ToString()
+        {
+            return String.Format($"Id:{idCategoria} -- Nome:{nome}");
+        }
 
         #endregion
 

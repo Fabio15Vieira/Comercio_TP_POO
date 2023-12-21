@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 
 /*
@@ -24,14 +25,13 @@ namespace Produtos
     /// </summary>
     /// <remarks></remarks>
     /// <example></example>
-    internal class Marca
+    public class Marca
     {
 
         #region Attributes
 
         int idMarca;
         string nome;
-        string[] modelos;
 
         #endregion
 
@@ -42,6 +42,11 @@ namespace Produtos
         /// <summary>
         /// The default Constructor.
         /// </summary>
+        /// 
+        public Marca(string nome)
+        {
+            this.nome = nome;
+        }
 
         #endregion
 
@@ -50,6 +55,19 @@ namespace Produtos
         /// <summary>
         /// 
         /// </summary>
+        /// 
+        public int IdMaraca
+        {
+            get { return idMarca; }
+            set { idMarca = value; }
+        }
+        public string Nome
+        {
+            get { return nome;}
+            set { nome = value; }
+        }
+
+
 
         #endregion
 
@@ -58,10 +76,28 @@ namespace Produtos
         /// <summary>
         /// 
         /// </summary>
+        /// 
+        public static bool operator ==(Marca m1, Marca m2)
+        {
+            if ((m1.nome == m2.nome))
+                return true;
+            return false;
+        }
+        public static bool operator !=(Marca c1, Marca c2)
+        {
+            if (c1 == c2)
+                return false;
+            return true;
+        }
+
 
         #endregion
 
         #region Overrides
+        public override string ToString()
+        {
+            return String.Format($"Id Marca:{idMarca} -- Nome:{nome}");
+        }
 
         #endregion
 

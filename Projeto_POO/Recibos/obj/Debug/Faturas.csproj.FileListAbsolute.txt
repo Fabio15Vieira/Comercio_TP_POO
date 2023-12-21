@@ -1,0 +1,17 @@
+C:\Users\Fábio\Desktop\Projeto_POO\Recibos\obj\Debug\Faturas.csproj.AssemblyReference.cache
+C:\Users\Fábio\Desktop\Projeto_POO\Recibos\obj\Debug\Faturas.csproj.CoreCompileInputs.cache
+C:\Users\Fábio\Desktop\Projeto_POO\Recibos\obj\Debug\Recibos.dll
+C:\Users\Fábio\Desktop\Projeto_POO\Recibos\obj\Debug\Recibos.pdb
+C:\Users\Fábio\Desktop\Projeto_POO\Recibos\bin\Debug\Recibos.dll
+C:\Users\Fábio\Desktop\Projeto_POO\Recibos\bin\Debug\Recibos.pdb
+C:\Users\Fábio\Desktop\Projeto_POO\Recibos\bin\Debug\Clientes.dll
+C:\Users\Fábio\Desktop\Projeto_POO\Recibos\bin\Debug\Compras.dll
+C:\Users\Fábio\Desktop\Projeto_POO\Recibos\bin\Debug\Produtos.dll
+C:\Users\Fábio\Desktop\Projeto_POO\Recibos\bin\Debug\Pessoas.dll
+C:\Users\Fábio\Desktop\Projeto_POO\Recibos\bin\Debug\Interfaces.dll
+C:\Users\Fábio\Desktop\Projeto_POO\Recibos\bin\Debug\Clientes.pdb
+C:\Users\Fábio\Desktop\Projeto_POO\Recibos\bin\Debug\Compras.pdb
+C:\Users\Fábio\Desktop\Projeto_POO\Recibos\bin\Debug\Produtos.pdb
+C:\Users\Fábio\Desktop\Projeto_POO\Recibos\bin\Debug\Pessoas.pdb
+C:\Users\Fábio\Desktop\Projeto_POO\Recibos\bin\Debug\Interfaces.pdb
+C:\Users\Fábio\Desktop\Projeto_POO\Recibos\obj\Debug\Faturas.csproj.CopyComplete

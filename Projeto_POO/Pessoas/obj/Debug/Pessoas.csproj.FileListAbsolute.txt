@@ -4,3 +4,6 @@ C:\Users\Fábio\Desktop\Projeto_POO\Pessoas\obj\Debug\Pessoas.csproj.AssemblyRef
 C:\Users\Fábio\Desktop\Projeto_POO\Pessoas\obj\Debug\Pessoas.csproj.CoreCompileInputs.cache
 C:\Users\Fábio\Desktop\Projeto_POO\Pessoas\obj\Debug\Pessoas.dll
 C:\Users\Fábio\Desktop\Projeto_POO\Pessoas\obj\Debug\Pessoas.pdb
+C:\Users\Fábio\Desktop\Projeto_POO\Pessoas\bin\Debug\Interfaces.dll
+C:\Users\Fábio\Desktop\Projeto_POO\Pessoas\bin\Debug\Interfaces.pdb
+C:\Users\Fábio\Desktop\Projeto_POO\Pessoas\obj\Debug\Pessoas.csproj.CopyComplete

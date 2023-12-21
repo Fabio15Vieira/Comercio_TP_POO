@@ -7,3 +7,9 @@ C:\Users\Fábio\Desktop\Projeto_POO\Clientes\obj\Debug\Clientes.csproj.CoreCompi
 C:\Users\Fábio\Desktop\Projeto_POO\Clientes\obj\Debug\Clientes.csproj.CopyComplete
 C:\Users\Fábio\Desktop\Projeto_POO\Clientes\obj\Debug\Clientes.dll
 C:\Users\Fábio\Desktop\Projeto_POO\Clientes\obj\Debug\Clientes.pdb
+C:\Users\Fábio\Desktop\Projeto_POO\Clientes\bin\Debug\Interfaces.dll
+C:\Users\Fábio\Desktop\Projeto_POO\Clientes\bin\Debug\Interfaces.pdb
+C:\Users\Fábio\Desktop\Projeto_POO\Clientes\bin\Debug\Compras.dll
+C:\Users\Fábio\Desktop\Projeto_POO\Clientes\bin\Debug\Produtos.dll
+C:\Users\Fábio\Desktop\Projeto_POO\Clientes\bin\Debug\Compras.pdb
+C:\Users\Fábio\Desktop\Projeto_POO\Clientes\bin\Debug\Produtos.pdb
